@@ -1,0 +1,84 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Oswald',sans-serif;
+}
+.main{
+    height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(lap.jpg);
+background-size: cover;
+background-position: center;
+}
+.header{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items:center;
+    padding: 35px 0;
+}
+.header ul{
+list-style: none;
+margin-right: 50px;
+}
+.header ul li {
+    display: inline-block;
+}
+ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    right: 50%;
+    padding: 8px 25px;
+    transition: 0.5s ease;
+}
+.header ul li a::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: indianred;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    transition:  0.5s;
+}
+.header ul li a:hover::after
+{
+    width: 100%;
+}
+.logo{
+    color: #fff;
+    font-size: 25px;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.hero h1{
+  text-transform: uppercase;
+  font-weight: 700;
+ font-size: 40px;
+ color: #fff;
+}
+.button{
+    margin-top: 30px;
+}
+.button .btn{
+    background-color: #fff;
+    color: #e6323e;
+    display:inline-block;
+    border: 1px solid #fff;
+    font-size: 15px;
+     padding: 10px 20px; 
+    margin: 0px 5px;
+    letter-spacing: 1.5px;
+    transition: 0.5s ease;
+}
+.button .btn:hover{
+ background-color: #000;
+}
